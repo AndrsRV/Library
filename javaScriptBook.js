@@ -103,4 +103,8 @@ bookList.addEventListener("click", (event) => {
   }
 });
 
+addBookToLibrary("How to be a good a man", "Venezuelan dude", 1500, true);
+
+addBookToLibrary("How to grocery shop", "Venezuela Dude", 200, false);
+
 render();
