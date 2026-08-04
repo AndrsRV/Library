@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background-color: #f4f1ea;
+  color: #2b2b2b;
+  margin: 0;
+  padding: 2.5rem 1.5rem;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+}
+
+#addBookButton {
+  background-color: #3b5e4c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#addBookButton:hover {
+  background-color: #2f4c3d;
+}
+
+#newBookForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 320px;
+  margin: 1rem 0;
+  padding: 1.25rem;
+  background-color: #fff;
+  border: 1px solid #ddd6c7;
+  border-radius: 8px;
+}
+
+#newBookForm[hidden] {
+  display: none;
+}
+
+#newBookForm label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+}
+
+#newBookForm input[type="text"],
+#newBookForm input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#newBookForm input[type="checkbox"] {
+  margin-right: 0.4rem;
+}
+
+#newBookForm button {
+  border: none;
+  border-radius: 6px;
+  padding: 0.55rem 1rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+#newBookForm button[type="submit"] {
+  background-color: #3b5e4c;
+  color: #fff;
+}
+
+#newBookForm button[type="submit"]:hover {
+  background-color: #2f4c3d;
+}
+
+#newBookForm #cancelAddBook {
+  background-color: #e7e2d4;
+  color: #2b2b2b;
+}
+
+#newBookForm #cancelAddBook:hover {
+  background-color: #ddd6c7;
+}
+
+#bookList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.book-card {
+  background-color: #fff;
+  border: 1px solid #ddd6c7;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.book-card h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+.book-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.book-card label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+.book-card .remove-btn {
+  align-self: flex-start;
+  margin-top: 0.4rem;
+  background-color: #b3462c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.book-card .remove-btn:hover {
+  background-color: #93381f;
+}

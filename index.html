@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="javaScriptPlayer.js"></script>
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javaScriptBook.js" defer></script>
 </head>
 <body>
-    
+    <h1>My Library</h1>
+    <button id="addBookButton">Add Book</button>
+
+    <form id="newBookForm" hidden>
+        <label for="titleInput">Title</label>
+        <input id="titleInput" type="text" required>
+
+        <label for="authorInput">Author</label>
+        <input id="authorInput" type="text" required>
+
+        <label for="pagesInput">Pages</label>
+        <input id="pagesInput" type="number" min="1" required>
+
+        <label for="readInput">Read?</label>
+        <input id="readInput" type="checkbox">
+
+        <button type="submit">Submit</button>
+        <button type="button" id="cancelAddBook">Cancel</button>
+    </form>
+
+    <div id="bookList"></div>
 </body>
 </html>
