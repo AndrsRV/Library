@@ -62,7 +62,11 @@ function render() {
     removeButton.className = "remove-btn";
     removeButton.textContent = "Remove";
 
-    card.append(titleEl, authorEl, pagesEl, readLabel, removeButton);
+    const idNumber = document.createElement("p");
+    idNumber.type = "text";
+    idNumber.textContent = `ID: ${book.id}`;
+
+    card.append(titleEl, authorEl, pagesEl, readLabel, removeButton, idNumber);
     bookList.appendChild(card);
   });
 }
