@@ -10,7 +10,7 @@ function Book(id, title, author, pages, read) {
 }
 
 function addBookToLibrary(title, author, pages, read) {
-  const newBook = new Book(nextId++, title, author, pages, read);
+  const newBook = new Book(++nextId, title, author, pages, read);
   myLibrary.push(newBook);
 }
 
